@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!--This is how I make all of the pages have the same heading, as well as the footer. This is the shared layout.-->
+
+<head>
+    <title>The Joel Hilton Film Collection</title>
+    <header>
+        <a asp-action="Index">Home |</a>
+        <a asp-action="Podcasts">Check out my Podcasts |</a>
+        <a asp-action="AddMovies">Add Movies to the collection</a>
+    </header>
+    <link rel="shortcut icon" type="image/x-icon" href="~/img/JoelHilton.jpg" />
+</head>
+
+<body>
+    <h1>@ViewBag.Title</h1>
+
+    @RenderBody()
+
+    <br />
+    <br />
+    <footer>&#169 2021 @ViewBag.Footer All rights reserved.</footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Confirmation";
+    ViewBag.Footer = "The Joel Hilton Film Collection.";
+}
+@model Assignment3.Models.MovieResponse
+
+<!--This is the page after someone sucessfully adds a movie. They will see it was successful and they can click on the link to go to the page that has all the movies.-->
+<div>
+    <h2>Thank you for entering a movie.</h2>
+    
+    Click <a asp-action="MovieCollection">here</a> to see the Movie Collection.
+
+</div>
